@@ -1,0 +1,31 @@
+public class Matrix
+{
+    public static void main (String args[])
+    {
+        int a[][] = {{1,3,4},{2,4,3},{3,4,5}};
+        int b[][] = {{1,3,4},{2,4,3},{1,2,4}};
+        int s[][] = new int[3][3];
+        int p[][] = new int[3][3];
+        int i,j,f;
+        System.out.println("Addition of matrix = ");
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                s[i][j] = a[i][j]+b[i][j];
+                System.out.print(s[i][j]+"    ");
+            }
+            System.out.println();
+        }
+        System.out.println("Multiplication of matrix = ");
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                p[i][j] = (a[i][0]*b[0][j])+(a[i][1]*b[1][j])+(a[i][2]*b[2][j]);
+                System.out.print(p[i][j]+"    ");
+            }
+            System.out.println();
+        }
+    }
+}
